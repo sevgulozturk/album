@@ -2,244 +2,222 @@
 offwhite; #f4f2f3 
 text: #2D3748 */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+
+/*-----------------------------------------------------------
+   GLOBAL STYLE
+------------------------------------------------------------*/
 
 body {
-    background: #000;
-    color: #fff;
-    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1f1f1f;          /* koyu gri */
+    color: white;
+    text-align: center;           /* çoğu şeyi ortaya çeker */
 }
+
+img {
+    max-width: 100%;
+}
+
+/*-----------------------------------------------------------
+   HEADER
+------------------------------------------------------------*/
 
 header {
-    padding: 30px 0;
+    text-align: center;
+    padding: 20px 0;
 }
 
-header img{
-    width: 120px;
-    height: auto;
+header img {
+    width: 90px;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto;
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin: 15px 0 10px 0;
     font-size: 32px;
-    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 15px;
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
     font-size: 18px;
 }
 
 nav a:hover {
-    color: #f0e68c;
+    color: #bbbbbb;
 }
+
+
+/*-----------------------------------------------------------
+   SEARCH BAR
+------------------------------------------------------------*/
 
 .search {
     margin-top: 20px;
 }
 
 .srch {
-    width: 250px;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
     border: none;
+    width: 200px;
 }
 
 .btn {
-    padding: 8px 15px;
+    padding: 10px 15px;
     border: none;
+    border-radius: 8px;
     margin-left: 5px;
     cursor: pointer;
-    background: #fff;
-    color: #000;
-    font-weight: bold;
-    border-radius:5px;
 }
 
 .btn:hover {
-    background: #f0e68c;
+    background: #444;
+    color: white;
 }
 
-/* HERO SECTION -------------------------------------------*/
-.hero {
-    padding: 50px 20px;
+/*-----------------------------------------------------------
+   SECTION TITLES
+------------------------------------------------------------*/
+
+h2, h3, h4, h5 {
+    text-align: center;
 }
 
-.hero p {
-    max-width: 700px;
-    margin: auto;
-    margin-top: 15px;
-    line-height: 1.6;
+/*-----------------------------------------------------------
+   GRID (INDEX + ALBUM)
+------------------------------------------------------------*/
+
+.album-grid-section,
+.album-detail-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 40px 20px;
 }
 
-/* ALBUM GRID (INDEX) --------------------------------------*/
-.album-grid-section {
-    padding: 50px 20px;
-}
+/*-----------------------------------------------------------
+   INDEX ALBUM CARDS
+------------------------------------------------------------*/
 
 .album-item {
-    max-width: 400px;
-    margin: 40px auto;
+    background: #2c2c2c;
+    padding: 25px;
+    border-radius: 15px;
+    width: 330px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 .album-item img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.album-item h4 {
-    margin-top: 15px;
-    font-size: 24px;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
 .album-item p {
-    margin-top: 10px;
-    color: #ccc;
-    line-height: 1.5;
-}
-
-/* FOOTER --------------------------------------------------*/
-.site-footer {
-    margin-top: 50px;
-    padding: 20px;
+    opacity: 0.8;
     font-size: 14px;
-    color: #aaa;
 }
 
-/* PAGE TITLES (ALBUM PAGE) -------------------------------*/
-.page-title {
-    margin-top: 40px;
-    padding: 20px;
-}
-
-.page-title p {
-    max-width: 700px;
-    margin: 10px auto;
-    line-height: 1.6;
-}
-
-/* ALBUM DETAIL GRID ---------------------------------------*/
-.album-detail-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
-    padding: 40px;
-}
+/*-----------------------------------------------------------
+   ALBUM DETAILS (album.html)
+------------------------------------------------------------*/
 
 .album-detail-card {
-    background: #111;
-    padding: 20px;
-    border-radius: 15px;
+    background: #2c2c2c;
+    padding: 30px;
+    border-radius: 18px;
+    width: 380px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 .album-detail-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.album-detail-card h3 {
-    margin: 15px 0;
-    font-size: 26px;
-}
-
-.artist-name {
-    margin-bottom: 10px;
-    color: #f0e68c;
-}
-
-.album-description {
-    color: #ccc;
-    line-height: 1.6;
-    margin: 15px auto;
-    max-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
 .tracklist {
     list-style: none;
+    padding: 0;
+    text-align: left;
     margin-top: 15px;
 }
 
 .tracklist li {
-    margin: 5px 0;
-    color: #ddd;
+    margin: 6px 0;
+    font-size: 14px;
+    color: #cccccc;
 }
 
-/* MERCH PAGE ----------------------------------------------*/
-.merch-section {
-    padding: 50px 20px;
-}
-
-.merch-info {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: #ccc;
-}
+/*-----------------------------------------------------------
+   MERCH GRID
+------------------------------------------------------------*/
 
 .merch-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 40px 20px;
 }
 
 .merch-item {
-    background: #111;
+    background: #2c2c2c;
+    width: 260px;
     padding: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.merch-item:hover {
-    transform: translateY(-5px);
-    background: #181818;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 .merch-item img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.merch-item h3 {
-    margin: 15px 0 5px;
-}
-
-.merch-item p {
-    color: #bbb;
-    font-size: 14px;
-    margin-bottom: 10px;
+    border-radius: 12px;
 }
 
 .price {
     display: block;
-    font-size: 20px;
-    margin-bottom: 12px;
-    color: #f0e68c;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: #fff;
-    color: #000;
-    border: none;
-    cursor: pointer;
-    border-radius: 6px;
+    margin: 10px 0;
     font-weight: bold;
 }
 
-button:hover {
-    background: #f0e68c;
+.merch-item button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
 }
 
+.merch-item button:hover {
+    background: #444;
+}
 
+/*-----------------------------------------------------------
+   AUDIO PLAYER
+------------------------------------------------------------*/
 
+.playlist-col {
+    margin-top: 20px;
+}
 
+/*-----------------------------------------------------------
+   FOOTER
+------------------------------------------------------------*/
+
+.site-footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    background: #181818;
+}
+
+.site-footer p {
+    color: #888;
+}
