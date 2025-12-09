@@ -2,14 +2,244 @@
 offwhite; #f4f2f3 
 text: #2D3748 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-    background-color: black;
-
+    background: #000;
+    color: #fff;
+    text-align: center;
 }
 
-h1 {
-    color: #c03232;
+header {
+    padding: 30px 0;
 }
+
+header img{
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f0e68c;
+}
+
+.search {
+    margin-top: 20px;
+}
+
+.srch {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.btn:hover {
+    background: #f0e68c;
+}
+
+/* HERO SECTION -------------------------------------------*/
+.hero {
+    padding: 50px 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* ALBUM GRID (INDEX) --------------------------------------*/
+.album-grid-section {
+    padding: 50px 20px;
+}
+
+.album-item {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.album-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.album-item h4 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.album-item p {
+    margin-top: 10px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* FOOTER --------------------------------------------------*/
+.site-footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* PAGE TITLES (ALBUM PAGE) -------------------------------*/
+.page-title {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.page-title p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+/* ALBUM DETAIL GRID ---------------------------------------*/
+.album-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 40px;
+}
+
+.album-detail-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.album-detail-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.album-detail-card h3 {
+    margin: 15px 0;
+    font-size: 26px;
+}
+
+.artist-name {
+    margin-bottom: 10px;
+    color: #f0e68c;
+}
+
+.album-description {
+    color: #ccc;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 400px;
+}
+
+.tracklist {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.tracklist li {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+/* MERCH PAGE ----------------------------------------------*/
+.merch-section {
+    padding: 50px 20px;
+}
+
+.merch-info {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.merch-item {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.merch-item:hover {
+    transform: translateY(-5px);
+    background: #181818;
+}
+
+.merch-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.merch-item h3 {
+    margin: 15px 0 5px;
+}
+
+.merch-item p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #f0e68c;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #f0e68c;
+}
+
 
 
 
